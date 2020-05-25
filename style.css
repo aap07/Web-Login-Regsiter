@@ -1,0 +1,207 @@
+/*CSS Reset*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*CSS Reset*/
+
+/* My Stle CSS */
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(cikuray.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 700px;
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    background: rgba(134, 134, 134, 0.4);
+    border-radius: 15% 0 15% 0;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper .left, .wrapper .right {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+}
+
+.wrapper .left .logo {
+    text-align: center;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 10% auto 0;
+}
+
+.media-sosial {
+    margin: 25px auto;
+    text-align: center;
+}
+
+.media-sosial h4 {
+    margin-bottom: 25px;
+}
+
+.media-sosial img {
+    width: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.wrapper .right .tabs ul {
+    text-align: center;
+}
+
+.wrapper .right .tabs ul li {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #292929;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.wrapper .right .tabs ul li.active {
+    border-bottom: 2px solid #dbdbdb;
+    color: #dbdbdb;
+}
+
+.wrapper .right .register, .wrapper .right .login {
+    margin-top: 20px;
+}
+
+.wrapper .right .input-field {
+    /* margin-bottom: 25px; */
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 30px 0;
+}
+
+.wrapper .right .input-field .input {
+    /* width: 90%;
+    padding: 10px 15px;
+    font-size: 12px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent; */
+    font-size: 15px;
+    color: #292929;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 30px;
+}
+
+.form-span::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #292929;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.form-span::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(120deg, #000000, #444444, #777777, #bbbbbb);
+    transition: ease 0.5s;
+}
+
+.focus+.form-span::before {
+    top: -5px;
+    font-size: 10px;
+    color: #dbdbdb;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.focus+.form-span::after {
+    width: 100%;
+}
+
+.check-box {
+    margin: 0 10px 0 0;
+}
+
+.span {
+    color: rgb(27, 27, 27);
+    font-size: 15px;
+    position: absolute;
+}
+
+.wrapper .right .btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    background: #292929;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+/* .wrapper .right .btn a {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+} */
